@@ -1,113 +1,136 @@
-import Image from 'next/image'
+import {
+  ArrowLongDownIcon,
+  ArrowLongRightIcon,
+} from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="w-full flex items-center justify-center h-screen">
+        <div className="p-10">
+          <div className="flex gap-5 items-center">
+            <div className="w-12 h-[1px] bg-[#FBD784]"></div>
+            <p className="uppercase text-lg text-[#FBD784] font-sans font-extrabold tracking-[6px] max-md:text-sm">
+              A Hiking guide
+            </p>
+          </div>
+          <h1 className="text-7xl py-10 max-md:text-3xl">
+            Be Prepared For The <br className="max-md:hidden" /> Mountains And
+            Beyond!
+          </h1>
+          <Link href="#seccion-uno" className="flex gap-2 items-center">
+            <p className="font-sans">scroll down</p>
+            <ArrowLongDownIcon className="text-white w-5 h-5" />
+          </Link>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section
+        id="seccion-uno"
+        className="w-full flex flex-col justify-center mt-[20%] max-md:mt-0"
+      >
+        <div className="flex flex-wrap items-center p-20 gap-10 justify-center max-md:p-0 ">
+          <div className="p-10">
+            <div className="flex gap-5 items-center relative">
+              <p className="text-[240px] opacity-5 absolute -top-63 -left-36 font-sans max-md:hidden">
+                01
+              </p>
+              <div className="w-12 h-[1px] bg-[#FBD784]"></div>
+              <p className="uppercase text-lg text-[#FBD784] font-sans font-extrabold tracking-[6px] max-md:text-sm one">
+                Get Started
+              </p>
+            </div>
+            <h1 className="text-7xl py-10 max-md:text-3xl">
+              What level of hiker <br /> are you?
+            </h1>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <div className="w-[500px] max-md:w-full">
+              <p className="pb-10 font-sans">
+                Determining what level of hiker you are can be an important tool
+                when planning future hikes. This hiking level guide will help
+                you plan hikes according to different hike ratings set by
+                various websites like All Trails and Modern Hiker. What type of
+                hiker are you - novice, moderate, advanced moderate, expert, or
+                expert backpacker?
+              </p>
+            </div>
+            <Link href="#" className="flex gap-2 items-center">
+              <p className="font-sans text-[#FBD784]">read more</p>
+              <ArrowLongRightIcon className="text-[#FBD784] w-5 h-5" />
+            </Link>
+          </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <img src="/images/01.jpg" alt="01" className="max-md:w-80" />
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+        <div className="flex flex-wrap flex-row-reverse items-center p-20 gap-32 justify-center max-md:p-0 max-md:gap-10">
+          <div className="p-10">
+            <div className="flex gap-5 items-center relative">
+              <p className="text-[240px] opacity-5 absolute -top-63 -left-36 font-sans max-md:hidden">
+                02
+              </p>
+              <div className="w-12 h-[1px] bg-[#FBD784]"></div>
+              <p className="uppercase text-lg text-[#FBD784] font-sans font-extrabold tracking-[6px] max-md:text-sm two">
+                Hiking Essentials
+              </p>
+            </div>
+            <h1 className="text-7xl py-10 max-md:text-3xl">
+              Picking the right <br /> Hiking Gear!
+            </h1>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <div className="w-[500px] max-md:w-full">
+              <p className="pb-10 font-sans">
+                The nice thing about beginning hiking is that you don’t really
+                need any special gear, you can probably get away with things you
+                already have. Let’s start with clothing. A typical mistake
+                hiking beginners make is wearing jeans and regular clothes,
+                which will get heavy and chafe wif they get sweaty or wet.
+              </p>
+            </div>
+            <Link href="#" className="flex gap-2 items-center">
+              <p className="font-sans text-[#FBD784]">read more</p>
+              <ArrowLongRightIcon className="text-[#FBD784] w-5 h-5" />
+            </Link>
+          </div>
+
+          <img src="/images/02.jpg" alt="02" className="max-md:w-80" />
+        </div>
+
+        <div className="flex flex-wrap items-center p-20 gap-10 justify-center max-md:p-0 ">
+          <div className="p-10">
+            <div className="flex gap-5 items-center relative">
+              <p className="text-[240px] opacity-5 absolute -top-63 -left-36 font-sans max-md:hidden">
+                03
+              </p>
+              <div className="w-12 h-[1px] bg-[#FBD784]"></div>
+              <p className="uppercase text-lg text-[#FBD784] font-sans font-extrabold tracking-[6px] max-md:text-sm three">
+                where you go is the key
+              </p>
+            </div>
+            <h1 className="text-7xl py-10 max-md:text-3xl">
+              Understand Your <br /> Map & Timing
+            </h1>
+
+            <div className="w-[500px] max-md:w-full">
+              <p className="pb-10 font-sans">
+                To start, print out the hiking guide and map. If it’s raining,
+                throw them in a Zip-Lock bag. Read over the guide, study the
+                map, and have a good idea of what to expect. I like to know what
+                my next landmark is as I hike. For example, I’ll read the guide
+                and know that say, in a mile, I make a right turn at the
+                junction..
+              </p>
+            </div>
+            <Link href="#" className="flex gap-2 items-center">
+              <p className="font-sans text-[#FBD784]">read more</p>
+              <ArrowLongRightIcon className="text-[#FBD784] w-5 h-5" />
+            </Link>
+          </div>
+
+          <img src="/images/03.jpg" alt="03" className="max-md:w-80" />
+        </div>
+      </section>
+    </>
+  );
 }
