@@ -11,7 +11,7 @@ export default function Home() {
         <div className="p-10">
           <div className="flex gap-5 items-center">
             <div className="w-12 h-[1px] bg-[#FBD784]"></div>
-            <p className="uppercase text-lg text-[#FBD784] font-sans font-extrabold tracking-[6px] max-md:text-sm">
+            <p className="uppercase text-lg text-[#FBD784] font-sans font-extrabold tracking-[6px] max-md:text-sm ">
               A Hiking guide
             </p>
           </div>
