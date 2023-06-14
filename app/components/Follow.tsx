@@ -1,6 +1,6 @@
 export default function Follow() {
   return (
-    <div className="flex items-center gap-5 transform rotate-90 absolute left-0 top-96 font-sans max-lg:hidden">
+    <aside className="flex items-center gap-5 transform rotate-90 absolute left-0 top-96 font-sans max-lg:hidden">
       <p>Follow us</p>
       <div className="transform -rotate-90 cursor-pointer">
         <svg
@@ -31,6 +31,6 @@ export default function Follow() {
           />
         </svg>
       </div>
-    </div>
+    </aside>
   );
 }
